@@ -752,8 +752,6 @@ F 3 "" H 1850 2850 50  0001 C CNN
 	1    1850 2850
 	1    0    0    -1  
 $EndComp
-Text Notes 2050 2850 0    50   ~ 0
-через блок питания\nMN-240-24\n"-" БП заземлён
 Connection ~ 3200 3550
 Wire Wire Line
 	3200 3550 3200 3350
@@ -768,8 +766,6 @@ F 3 "" H 3200 2850 50  0001 C CNN
 	1    3200 2850
 	1    0    0    -1  
 $EndComp
-Text Notes 3350 2850 0    50   ~ 0
-через блок питания \nHTS-25M-5\n"-" БП заземлён!
 $Comp
 L power:+5V #PWR05
 U 1 1 5D46ECB3
@@ -781,8 +777,6 @@ F 3 "" H 5150 4100 50  0001 C CNN
 	1    5150 4100
 	1    0    0    -1  
 $EndComp
-Text Notes 4600 3950 0    50   ~ 0
-через блок питания \nHTS-25M-5\n"-" БП отвязан \nот земли!
 NoConn ~ 5450 4500
 NoConn ~ 5450 4600
 NoConn ~ 5450 4900
@@ -814,7 +808,7 @@ L MCU_Module:Arduino_Nano_v3.x A1
 U 1 1 5D27EA3B
 P 4950 5100
 F 0 "A1" H 4950 4011 50  0001 C CNN
-F 1 "Arduino_Nano_v3.x" H 4950 4011 50  0000 C CNN
+F 1 "Arduino_Nano_v3.x" H 4950 3950 50  0000 C CNN
 F 2 "Module:Arduino_Nano" H 5100 4150 50  0001 L CNN
 F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 4950 4100 50  0001 C CNN
 	1    4950 5100
@@ -1148,7 +1142,7 @@ Wire Wire Line
 Wire Wire Line
 	6250 2950 5400 2950
 Wire Wire Line
-	5400 2950 5400 4100
+	5400 2950 5400 3850
 Wire Wire Line
 	5400 4100 5150 4100
 Connection ~ 5150 4100
@@ -1429,4 +1423,48 @@ Connection ~ 1350 3000
 Wire Wire Line
 	1350 3000 1350 6350
 NoConn ~ 5450 5100
+Text Notes 4550 3550 0    50   ~ 0
+через блок питания \nHTS-25M-5\n"-" БП заземлён
+Text Notes 2100 2950 0    50   ~ 0
+через блок питания\nMN-240-24\n"-" БП отвязан\nот земли
+Text Notes 3350 2850 0    50   ~ 0
+через блок питания \nHTS-25M-5\n"-" БП отвязан\nот земли
+$Comp
+L Connector_Generic:Conn_01x02 J13
+U 1 1 5D3377BE
+P 4800 3750
+F 0 "J13" V 4764 3562 50  0000 R CNN
+F 1 "к БП" V 4950 3800 50  0000 R CNN
+F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBV_2,5_2-GF_1x02_P5.00mm_Vertical_ThreadedFlange" H 4800 3750 50  0001 C CNN
+F 3 "~" H 4800 3750 50  0001 C CNN
+	1    4800 3750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4900 3950 5050 3950
+Wire Wire Line
+	5050 3950 5050 3850
+Wire Wire Line
+	5050 3850 5400 3850
+Connection ~ 5400 3850
+Wire Wire Line
+	5400 3850 5400 4100
+Wire Wire Line
+	4500 3950 4500 3350
+Wire Wire Line
+	4500 3350 3900 3350
+Connection ~ 3900 3350
+Wire Wire Line
+	4500 3950 4800 3950
+$Comp
+L power:Earth #PWR0102
+U 1 1 5D3943C7
+P 4950 6100
+F 0 "#PWR0102" H 4950 5850 50  0001 C CNN
+F 1 "Earth" H 4950 5950 50  0001 C CNN
+F 2 "" H 4950 6100 50  0001 C CNN
+F 3 "~" H 4950 6100 50  0001 C CNN
+	1    4950 6100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

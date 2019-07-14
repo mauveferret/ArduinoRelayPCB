@@ -17,12 +17,12 @@ $EndDescr
 $Comp
 L power:Earth #PWR03
 U 1 1 5D280DBC
-P 3200 6400
-F 0 "#PWR03" H 3200 6150 50  0001 C CNN
-F 1 "Earth" H 3200 6250 50  0001 C CNN
-F 2 "" H 3200 6400 50  0001 C CNN
-F 3 "~" H 3200 6400 50  0001 C CNN
-	1    3200 6400
+P 3550 6200
+F 0 "#PWR03" H 3550 5950 50  0001 C CNN
+F 1 "Earth" H 3550 6050 50  0001 C CNN
+F 2 "" H 3550 6200 50  0001 C CNN
+F 3 "~" H 3550 6200 50  0001 C CNN
+	1    3550 6200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -46,7 +46,7 @@ U 1 1 5D2AC225
 P 2800 5200
 F 0 "J3" H 2750 5000 50  0000 L CNN
 F 1 "нагрузка" H 2880 5101 50  0000 L CNN
-F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBV_2,5_2-GF_1x02_P5.00mm_Vertical_ThreadedFlange" H 2800 5200 50  0001 C CNN
+F 2 "TerminalBlock_Altech:Altech_AK300_1x02_P5.00mm_45-Degree" H 2800 5200 50  0001 C CNN
 F 3 "~" H 2800 5200 50  0001 C CNN
 	1    2800 5200
 	1    0    0    -1  
@@ -98,7 +98,7 @@ NoConn ~ 4450 5400
 NoConn ~ 4450 5600
 NoConn ~ 5050 6100
 Wire Wire Line
-	3200 6400 3200 6350
+	3550 6200 3550 6150
 $Comp
 L power:Earth #PWR0101
 U 1 1 5D40207F
@@ -253,7 +253,7 @@ U 1 1 5D2F61C5
 P 2800 4500
 F 0 "J6" H 2750 4300 50  0000 L CNN
 F 1 "нагрузка" H 2880 4401 50  0000 L CNN
-F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBV_2,5_2-GF_1x02_P5.00mm_Vertical_ThreadedFlange" H 2800 4500 50  0001 C CNN
+F 2 "TerminalBlock_Altech:Altech_AK300_1x02_P5.00mm_45-Degree" H 2800 4500 50  0001 C CNN
 F 3 "~" H 2800 4500 50  0001 C CNN
 	1    2800 4500
 	1    0    0    -1  
@@ -318,9 +318,6 @@ Wire Wire Line
 	2400 5100 2500 5100
 Text Notes 2850 4550 0    50   ~ 0
 пневмо
-Wire Wire Line
-	2600 4600 2500 4600
-Connection ~ 2600 4600
 $Comp
 L Isolator:PC817 U3
 U 1 1 5D2F61EF
@@ -409,7 +406,7 @@ U 1 1 5D316E8C
 P 2800 3800
 F 0 "J5" H 2750 3600 50  0000 L CNN
 F 1 "нагрузка" H 2880 3701 50  0000 L CNN
-F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBV_2,5_2-GF_1x02_P5.00mm_Vertical_ThreadedFlange" H 2800 3800 50  0001 C CNN
+F 2 "TerminalBlock_Altech:Altech_AK300_1x02_P5.00mm_45-Degree" H 2800 3800 50  0001 C CNN
 F 3 "~" H 2800 3800 50  0001 C CNN
 	1    2800 3800
 	1    0    0    -1  
@@ -472,9 +469,6 @@ F 3 "~" H 4250 4450 50  0001 C CNN
 $EndComp
 Text Notes 2850 3850 0    50   ~ 0
 пневмо
-Wire Wire Line
-	2600 3900 2500 3900
-Connection ~ 2600 3900
 $Comp
 L Isolator:PC817 U2
 U 1 1 5D316EB6
@@ -582,14 +576,14 @@ $EndComp
 Wire Wire Line
 	2600 3250 2600 3150
 Text Notes 2100 3200 0    50   ~ 0
-запас
+запасной
 $Comp
 L Connector_Generic:Conn_01x02 J2
 U 1 1 5D3A8EE3
 P 2800 3050
 F 0 "J2" H 2750 2850 50  0000 L CNN
 F 1 "нагрузка" H 2900 3000 50  0000 L CNN
-F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBV_2,5_2-GF_1x02_P5.00mm_Vertical_ThreadedFlange" H 2800 3050 50  0001 C CNN
+F 2 "TerminalBlock_Altech:Altech_AK300_1x02_P5.00mm_45-Degree" H 2800 3050 50  0001 C CNN
 F 3 "~" H 2800 3050 50  0001 C CNN
 	1    2800 3050
 	1    0    0    -1  
@@ -650,9 +644,6 @@ F 3 "~" H 4250 3700 50  0001 C CNN
 	1    4250 3700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2600 3150 2500 3150
-Connection ~ 2600 3150
 $Comp
 L Isolator:PC817 U1
 U 1 1 5D3A8F0D
@@ -724,8 +715,6 @@ Connection ~ 4250 3550
 Wire Wire Line
 	4400 4800 4450 4800
 Connection ~ 3050 6350
-Wire Wire Line
-	1850 2850 1850 2900
 Connection ~ 1850 3050
 Wire Wire Line
 	1850 3050 2600 3050
@@ -800,16 +789,14 @@ Wire Wire Line
 Wire Wire Line
 	3200 5500 3200 5000
 Wire Wire Line
-	3200 6350 3050 6350
-Wire Wire Line
 	2250 5800 2250 6350
 $Comp
 L MCU_Module:Arduino_Nano_v3.x A1
 U 1 1 5D27EA3B
 P 4950 5100
 F 0 "A1" H 4950 4011 50  0001 C CNN
-F 1 "Arduino_Nano_v3.x" H 4950 3950 50  0000 C CNN
-F 2 "Module:Arduino_Nano" H 5100 4150 50  0001 L CNN
+F 1 "Arduino_Nano_v3" H 4950 3950 50  0000 C CNN
+F 2 "Module:Arduino_Nano_WithMountingHoles" H 5100 4150 50  0001 L CNN
 F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 4950 4100 50  0001 C CNN
 	1    4950 5100
 	1    0    0    -1  
@@ -1153,7 +1140,6 @@ Wire Wire Line
 Connection ~ 3200 2900
 Wire Wire Line
 	3200 2900 3200 2850
-Connection ~ 3200 6350
 $Comp
 L Device:R R25
 U 1 1 5DA7632E
@@ -1257,7 +1243,7 @@ U 1 1 5DAE6D11
 P 7600 5800
 F 0 "J12" V 7564 5612 50  0000 R CNN
 F 1 "запасной" H 7750 5950 50  0000 R CNN
-F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBV_2,5_2-GF_1x02_P5.00mm_Vertical_ThreadedFlange" H 7600 5800 50  0001 C CNN
+F 2 "TerminalBlock_Altech:Altech_AK300_1x02_P5.00mm_45-Degree" H 7600 5800 50  0001 C CNN
 F 3 "~" H 7600 5800 50  0001 C CNN
 	1    7600 5800
 	1    0    0    -1  
@@ -1268,7 +1254,7 @@ U 1 1 5DAD6CE4
 P 7600 5250
 F 0 "J11" V 7564 5062 50  0000 R CNN
 F 1 "запасной" H 7750 5400 50  0000 R CNN
-F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBV_2,5_2-GF_1x02_P5.00mm_Vertical_ThreadedFlange" H 7600 5250 50  0001 C CNN
+F 2 "TerminalBlock_Altech:Altech_AK300_1x02_P5.00mm_45-Degree" H 7600 5250 50  0001 C CNN
 F 3 "~" H 7600 5250 50  0001 C CNN
 	1    7600 5250
 	1    0    0    -1  
@@ -1278,8 +1264,8 @@ L Connector_Generic:Conn_01x02 J10
 U 1 1 5DAC6D25
 P 7600 4700
 F 0 "J10" V 7564 4512 50  0000 R CNN
-F 1 "геркон шибера 1" H 7950 4850 50  0000 R CNN
-F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBV_2,5_2-GF_1x02_P5.00mm_Vertical_ThreadedFlange" H 7600 4700 50  0001 C CNN
+F 1 "геркон шибера 1" H 7700 4850 50  0000 R CNN
+F 2 "TerminalBlock_Altech:Altech_AK300_1x02_P5.00mm_45-Degree" H 7600 4700 50  0001 C CNN
 F 3 "~" H 7600 4700 50  0001 C CNN
 	1    7600 4700
 	1    0    0    -1  
@@ -1289,8 +1275,8 @@ L Connector_Generic:Conn_01x02 J9
 U 1 1 5DAB6C76
 P 7600 4150
 F 0 "J9" V 7564 3962 50  0000 R CNN
-F 1 "геркон шибера 0" H 7950 4300 50  0000 R CNN
-F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBV_2,5_2-GF_1x02_P5.00mm_Vertical_ThreadedFlange" H 7600 4150 50  0001 C CNN
+F 1 "геркон шибера 0" H 7700 4300 50  0000 R CNN
+F 2 "TerminalBlock_Altech:Altech_AK300_1x02_P5.00mm_45-Degree" H 7600 4150 50  0001 C CNN
 F 3 "~" H 7600 4150 50  0001 C CNN
 	1    7600 4150
 	1    0    0    -1  
@@ -1300,8 +1286,8 @@ L Connector_Generic:Conn_01x02 J8
 U 1 1 5DAA6942
 P 7600 3600
 F 0 "J8" V 7564 3412 50  0000 R CNN
-F 1 "геркон клапана 1" H 7950 3750 50  0000 R CNN
-F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBV_2,5_2-GF_1x02_P5.00mm_Vertical_ThreadedFlange" H 7600 3600 50  0001 C CNN
+F 1 "геркон клапана 1" H 7700 3750 50  0000 R CNN
+F 2 "TerminalBlock_Altech:Altech_AK300_1x02_P5.00mm_45-Degree" H 7600 3600 50  0001 C CNN
 F 3 "~" H 7600 3600 50  0001 C CNN
 	1    7600 3600
 	1    0    0    -1  
@@ -1311,14 +1297,12 @@ L Connector_Generic:Conn_01x02 J4
 U 1 1 5D300319
 P 7600 3050
 F 0 "J4" V 7564 2862 50  0000 R CNN
-F 1 "геркон клапана 0" H 7950 3200 50  0000 R CNN
-F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBV_2,5_2-GF_1x02_P5.00mm_Vertical_ThreadedFlange" H 7600 3050 50  0001 C CNN
+F 1 "геркон клапана 0" H 7700 3200 50  0000 R CNN
+F 2 "TerminalBlock_Altech:Altech_AK300_1x02_P5.00mm_45-Degree" H 7600 3050 50  0001 C CNN
 F 3 "~" H 7600 3050 50  0001 C CNN
 	1    7600 3050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7350 6350 3200 6350
 Wire Wire Line
 	6900 3050 7000 3050
 Wire Wire Line
@@ -1375,31 +1359,21 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x02 J1
 U 1 1 5DDC5F15
-P 1350 2700
-F 0 "J1" H 1300 2500 50  0000 L CNN
-F 1 "к БП" V 1500 2600 50  0000 L CNN
-F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBV_2,5_2-GF_1x02_P5.00mm_Vertical_ThreadedFlange" H 1350 2700 50  0001 C CNN
-F 3 "~" H 1350 2700 50  0001 C CNN
-	1    1350 2700
-	0    -1   -1   0   
+P 2200 2750
+F 0 "J1" H 2150 2550 50  0000 L CNN
+F 1 "к БП" V 2350 2650 50  0000 L CNN
+F 2 "TerminalBlock_Altech:Altech_AK300_1x02_P5.00mm_45-Degree" H 2200 2750 50  0001 C CNN
+F 3 "~" H 2200 2750 50  0001 C CNN
+	1    2200 2750
+	0    1    -1   0   
 $EndComp
-Wire Wire Line
-	1450 2900 1850 2900
-Connection ~ 1850 2900
-Wire Wire Line
-	1850 2900 1850 3050
-Wire Wire Line
-	1350 2900 1350 3000
-Wire Wire Line
-	1350 6350 2250 6350
-Connection ~ 2250 6350
 $Comp
 L Connector_Generic:Conn_01x02 J7
 U 1 1 5DE2E44B
 P 4250 2600
 F 0 "J7" V 4214 2412 50  0000 R CNN
-F 1 "к БП" V 4400 2650 50  0000 R CNN
-F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBV_2,5_2-GF_1x02_P5.00mm_Vertical_ThreadedFlange" H 4250 2600 50  0001 C CNN
+F 1 "к БП" V 4100 2450 50  0000 R CNN
+F 2 "TerminalBlock_Altech:Altech_AK300_1x02_P5.00mm_45-Degree" H 4250 2600 50  0001 C CNN
 F 3 "~" H 4250 2600 50  0001 C CNN
 	1    4250 2600
 	0    -1   -1   0   
@@ -1412,22 +1386,13 @@ Wire Wire Line
 Wire Wire Line
 	4250 2800 4150 2800
 Wire Wire Line
-	4150 2800 4150 2450
-Wire Wire Line
-	4150 2450 1150 2450
-Wire Wire Line
-	1150 2450 1150 3000
-Wire Wire Line
-	1150 3000 1350 3000
-Connection ~ 1350 3000
-Wire Wire Line
-	1350 3000 1350 6350
+	4150 2800 4150 2550
 NoConn ~ 5450 5100
 Text Notes 4550 3550 0    50   ~ 0
 через блок питания \nHTS-25M-5\n"-" БП заземлён
-Text Notes 2100 2950 0    50   ~ 0
+Text Notes 2350 2950 0    50   ~ 0
 через блок питания\nMN-240-24\n"-" БП отвязан\nот земли
-Text Notes 3350 2850 0    50   ~ 0
+Text Notes 3350 2900 0    50   ~ 0
 через блок питания \nHTS-25M-5\n"-" БП отвязан\nот земли
 $Comp
 L Connector_Generic:Conn_01x02 J13
@@ -1435,7 +1400,7 @@ U 1 1 5D3377BE
 P 4800 3750
 F 0 "J13" V 4764 3562 50  0000 R CNN
 F 1 "к БП" V 4950 3800 50  0000 R CNN
-F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBV_2,5_2-GF_1x02_P5.00mm_Vertical_ThreadedFlange" H 4800 3750 50  0001 C CNN
+F 2 "TerminalBlock_Altech:Altech_AK300_1x02_P5.00mm_45-Degree" H 4800 3750 50  0001 C CNN
 F 3 "~" H 4800 3750 50  0001 C CNN
 	1    4800 3750
 	0    -1   -1   0   
@@ -1467,4 +1432,34 @@ F 3 "~" H 4950 6100 50  0001 C CNN
 	1    4950 6100
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1850 2850 1850 2950
+Wire Wire Line
+	2100 2950 1850 2950
+Connection ~ 1850 2950
+Wire Wire Line
+	1850 2950 1850 3050
+Wire Wire Line
+	2200 2950 2300 2950
+Wire Wire Line
+	2300 2950 2300 2550
+Wire Wire Line
+	2300 2550 1750 2550
+Wire Wire Line
+	1750 2550 1750 6350
+Wire Wire Line
+	1750 6350 2250 6350
+Connection ~ 2250 6350
+Wire Wire Line
+	2300 2550 4150 2550
+Connection ~ 2300 2550
+Wire Wire Line
+	3050 6350 3450 6350
+Wire Wire Line
+	3550 6150 3450 6150
+Wire Wire Line
+	3450 6150 3450 6350
+Connection ~ 3450 6350
+Wire Wire Line
+	3450 6350 7350 6350
 $EndSCHEMATC

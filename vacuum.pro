@@ -1,4 +1,4 @@
-update=12.07.2019 19:56:00
+update=14.07.2019 15:20:04
 version=1
 last_client=kicad
 [general]
@@ -28,10 +28,10 @@ MinViaDrill=0.3
 MinMicroViaDiameter=0.2
 MinMicroViaDrill=0.09999999999999999
 MinHoleToHole=0.25
-TrackWidth1=1
+TrackWidth1=0.5
 TrackWidth2=1
 TrackWidth3=2
-ViaDiameter1=2
+ViaDiameter1=0.8
 ViaDrill1=0.4
 dPairWidth1=0.2
 dPairGap1=0.25
@@ -255,10 +255,10 @@ dPairViaGap=0.25
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=../
+PlotDirectoryName=C:/Users/mi/Desktop/
 SubpartIdSeparator=0
 SubpartFirstId=65
-NetFmtName=
+NetFmtName=Pcbnew
 SpiceAjustPassiveValues=0
 LabSize=50
 ERC_TestSimilarLabels=1

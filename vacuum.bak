@@ -17,12 +17,12 @@ $EndDescr
 $Comp
 L power:Earth #PWR03
 U 1 1 5D280DBC
-P 3200 6400
-F 0 "#PWR03" H 3200 6150 50  0001 C CNN
-F 1 "Earth" H 3200 6250 50  0001 C CNN
-F 2 "" H 3200 6400 50  0001 C CNN
-F 3 "~" H 3200 6400 50  0001 C CNN
-	1    3200 6400
+P 3550 6200
+F 0 "#PWR03" H 3550 5950 50  0001 C CNN
+F 1 "Earth" H 3550 6050 50  0001 C CNN
+F 2 "" H 3550 6200 50  0001 C CNN
+F 3 "~" H 3550 6200 50  0001 C CNN
+	1    3550 6200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -98,7 +98,7 @@ NoConn ~ 4450 5400
 NoConn ~ 4450 5600
 NoConn ~ 5050 6100
 Wire Wire Line
-	3200 6400 3200 6350
+	3550 6200 3550 6150
 $Comp
 L power:Earth #PWR0101
 U 1 1 5D40207F
@@ -127,7 +127,7 @@ U 1 1 5D28DDEC
 P 2250 5600
 F 0 "SW3" V 2400 5750 50  0000 R CNN
 F 1 "Кнопка" H 2350 5750 50  0000 R CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm_H5mm" H 2250 5800 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2250 5800 50  0001 C CNN
 F 3 "~" H 2250 5800 50  0001 C CNN
 	1    2250 5600
 	0    -1   -1   0   
@@ -178,7 +178,7 @@ U 1 1 5D303D0F
 P 2850 6200
 F 0 "SW4" H 3200 6300 50  0000 R CNN
 F 1 "Выключить автоматику" H 3400 6400 50  0000 R CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm" H 2850 6400 50  0001 C CNN
+F 2 "TerminalBlock_Altech:Altech_AK300_1x02_P5.00mm_45-Degree" H 2850 6400 50  0001 C CNN
 F 3 "~" H 2850 6400 50  0001 C CNN
 	1    2850 6200
 	1    0    0    -1  
@@ -208,8 +208,6 @@ F 3 "~" H 4050 5700 50  0001 C CNN
 	1    4050 5700
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	3250 5500 3200 5500
 Wire Wire Line
 	3250 5700 3200 5700
 Wire Wire Line
@@ -273,7 +271,7 @@ U 1 1 5D2F61D0
 P 2250 4900
 F 0 "SW5" V 2400 5050 50  0000 R CNN
 F 1 "Кнопка" H 2350 5050 50  0000 R CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm_H5mm" H 2250 5100 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2250 5100 50  0001 C CNN
 F 3 "~" H 2250 5100 50  0001 C CNN
 	1    2250 4900
 	0    -1   -1   0   
@@ -318,9 +316,6 @@ Wire Wire Line
 	2400 5100 2500 5100
 Text Notes 2850 4550 0    50   ~ 0
 пневмо
-Wire Wire Line
-	2600 4600 2500 4600
-Connection ~ 2600 4600
 $Comp
 L Isolator:PC817 U3
 U 1 1 5D2F61EF
@@ -344,11 +339,7 @@ F 3 "~" H 4050 5000 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	3250 4800 3200 4800
-Wire Wire Line
 	3250 5000 3200 5000
-Wire Wire Line
-	3200 5000 3200 4800
 Wire Wire Line
 	4200 5000 4250 5000
 Wire Wire Line
@@ -429,7 +420,7 @@ U 1 1 5D316E97
 P 2250 4200
 F 0 "SW2" V 2400 4350 50  0000 R CNN
 F 1 "Кнопка" H 2350 4350 50  0000 R CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm_H5mm" H 2250 4400 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2250 4400 50  0001 C CNN
 F 3 "~" H 2250 4400 50  0001 C CNN
 	1    2250 4200
 	0    -1   -1   0   
@@ -472,9 +463,6 @@ F 3 "~" H 4250 4450 50  0001 C CNN
 $EndComp
 Text Notes 2850 3850 0    50   ~ 0
 пневмо
-Wire Wire Line
-	2600 3900 2500 3900
-Connection ~ 2600 3900
 $Comp
 L Isolator:PC817 U2
 U 1 1 5D316EB6
@@ -498,8 +486,6 @@ F 3 "~" H 4050 4300 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	3250 4100 3200 4100
-Wire Wire Line
 	3250 4300 3200 4300
 Wire Wire Line
 	4200 4300 4250 4300
@@ -521,7 +507,6 @@ Wire Wire Line
 Wire Wire Line
 	2000 4550 2000 5250
 Connection ~ 2000 5250
-Connection ~ 3200 5000
 Wire Wire Line
 	2500 4400 2500 4450
 Wire Wire Line
@@ -567,7 +552,6 @@ Wire Wire Line
 	4400 4950 4400 5100
 Wire Wire Line
 	4350 4300 4350 4950
-Connection ~ 3200 4300
 $Comp
 L Diode:1N4001 D1
 U 1 1 5D3A8EDB
@@ -582,7 +566,7 @@ $EndComp
 Wire Wire Line
 	2600 3250 2600 3150
 Text Notes 2100 3200 0    50   ~ 0
-запас
+запасной
 $Comp
 L Connector_Generic:Conn_01x02 J2
 U 1 1 5D3A8EE3
@@ -609,7 +593,7 @@ U 1 1 5D3A8EEE
 P 2250 3450
 F 0 "SW1" V 2400 3600 50  0000 R CNN
 F 1 "Кнопка" H 2350 3600 50  0000 R CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm_H5mm" H 2250 3650 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2250 3650 50  0001 C CNN
 F 3 "~" H 2250 3650 50  0001 C CNN
 	1    2250 3450
 	0    -1   -1   0   
@@ -650,9 +634,6 @@ F 3 "~" H 4250 3700 50  0001 C CNN
 	1    4250 3700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2600 3150 2500 3150
-Connection ~ 2600 3150
 $Comp
 L Isolator:PC817 U1
 U 1 1 5D3A8F0D
@@ -675,8 +656,6 @@ F 3 "~" H 4050 3550 50  0001 C CNN
 	1    4050 3550
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	3250 3350 3200 3350
 Wire Wire Line
 	3250 3550 3200 3550
 Wire Wire Line
@@ -764,41 +743,10 @@ F 3 "" H 3200 2850 50  0001 C CNN
 	1    3200 2850
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+5V #PWR05
-U 1 1 5D46ECB3
-P 5150 4100
-F 0 "#PWR05" H 5150 3950 50  0001 C CNN
-F 1 "+5V" H 5165 4273 50  0000 C CNN
-F 2 "" H 5150 4100 50  0001 C CNN
-F 3 "" H 5150 4100 50  0001 C CNN
-	1    5150 4100
-	1    0    0    -1  
-$EndComp
 NoConn ~ 5450 4500
 NoConn ~ 5450 4600
 NoConn ~ 5450 4900
 NoConn ~ 5450 5800
-Connection ~ 3200 3350
-Wire Wire Line
-	3200 3350 3150 3350
-Connection ~ 3200 4100
-Wire Wire Line
-	3200 4100 3150 4100
-Wire Wire Line
-	3200 4100 3200 4300
-Connection ~ 3200 4800
-Wire Wire Line
-	3200 4800 3150 4800
-Wire Wire Line
-	3200 4800 3200 4300
-Connection ~ 3200 5500
-Wire Wire Line
-	3200 5500 3150 5500
-Wire Wire Line
-	3200 5500 3200 5000
-Wire Wire Line
-	3200 6350 3050 6350
 Wire Wire Line
 	2250 5800 2250 6350
 $Comp
@@ -806,7 +754,7 @@ L MCU_Module:Arduino_Nano_v3.x A1
 U 1 1 5D27EA3B
 P 4950 5100
 F 0 "A1" H 4950 4011 50  0001 C CNN
-F 1 "Arduino_Nano_v3.x" H 4950 3950 50  0000 C CNN
+F 1 "Arduino_Nano_v3" H 4950 3950 50  0000 C CNN
 F 2 "Module:Arduino_Nano_WithMountingHoles" H 5100 4150 50  0001 L CNN
 F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 4950 4100 50  0001 C CNN
 	1    4950 5100
@@ -1143,7 +1091,6 @@ Wire Wire Line
 	5400 2950 5400 3850
 Wire Wire Line
 	5400 4100 5150 4100
-Connection ~ 5150 4100
 Wire Wire Line
 	5250 2750 5250 2900
 Wire Wire Line
@@ -1151,7 +1098,6 @@ Wire Wire Line
 Connection ~ 3200 2900
 Wire Wire Line
 	3200 2900 3200 2850
-Connection ~ 3200 6350
 $Comp
 L Device:R R25
 U 1 1 5DA7632E
@@ -1276,7 +1222,7 @@ L Connector_Generic:Conn_01x02 J10
 U 1 1 5DAC6D25
 P 7600 4700
 F 0 "J10" V 7564 4512 50  0000 R CNN
-F 1 "геркон шибера 1" H 7950 4850 50  0000 R CNN
+F 1 "геркон шибера 1" H 7700 4850 50  0000 R CNN
 F 2 "TerminalBlock_Altech:Altech_AK300_1x02_P5.00mm_45-Degree" H 7600 4700 50  0001 C CNN
 F 3 "~" H 7600 4700 50  0001 C CNN
 	1    7600 4700
@@ -1287,7 +1233,7 @@ L Connector_Generic:Conn_01x02 J9
 U 1 1 5DAB6C76
 P 7600 4150
 F 0 "J9" V 7564 3962 50  0000 R CNN
-F 1 "геркон шибера 0" H 7950 4300 50  0000 R CNN
+F 1 "геркон шибера 0" H 7700 4300 50  0000 R CNN
 F 2 "TerminalBlock_Altech:Altech_AK300_1x02_P5.00mm_45-Degree" H 7600 4150 50  0001 C CNN
 F 3 "~" H 7600 4150 50  0001 C CNN
 	1    7600 4150
@@ -1298,7 +1244,7 @@ L Connector_Generic:Conn_01x02 J8
 U 1 1 5DAA6942
 P 7600 3600
 F 0 "J8" V 7564 3412 50  0000 R CNN
-F 1 "геркон клапана 1" H 7950 3750 50  0000 R CNN
+F 1 "геркон клапана 1" H 7700 3750 50  0000 R CNN
 F 2 "TerminalBlock_Altech:Altech_AK300_1x02_P5.00mm_45-Degree" H 7600 3600 50  0001 C CNN
 F 3 "~" H 7600 3600 50  0001 C CNN
 	1    7600 3600
@@ -1309,14 +1255,12 @@ L Connector_Generic:Conn_01x02 J4
 U 1 1 5D300319
 P 7600 3050
 F 0 "J4" V 7564 2862 50  0000 R CNN
-F 1 "геркон клапана 0" H 7950 3200 50  0000 R CNN
+F 1 "геркон клапана 0" H 7700 3200 50  0000 R CNN
 F 2 "TerminalBlock_Altech:Altech_AK300_1x02_P5.00mm_45-Degree" H 7600 3050 50  0001 C CNN
 F 3 "~" H 7600 3050 50  0001 C CNN
 	1    7600 3050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7350 6350 3200 6350
 Wire Wire Line
 	6900 3050 7000 3050
 Wire Wire Line
@@ -1435,17 +1379,6 @@ Wire Wire Line
 Connection ~ 3900 3350
 Wire Wire Line
 	4500 3950 4800 3950
-$Comp
-L power:Earth #PWR0102
-U 1 1 5D3943C7
-P 4950 6100
-F 0 "#PWR0102" H 4950 5850 50  0001 C CNN
-F 1 "Earth" H 4950 5950 50  0001 C CNN
-F 2 "" H 4950 6100 50  0001 C CNN
-F 3 "~" H 4950 6100 50  0001 C CNN
-	1    4950 6100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1850 2850 1850 2950
 Wire Wire Line
@@ -1467,4 +1400,31 @@ Connection ~ 2250 6350
 Wire Wire Line
 	2300 2550 4150 2550
 Connection ~ 2300 2550
+Wire Wire Line
+	3050 6350 3450 6350
+Wire Wire Line
+	3550 6150 3450 6150
+Wire Wire Line
+	3450 6150 3450 6350
+Connection ~ 3450 6350
+Wire Wire Line
+	3450 6350 7350 6350
+Wire Wire Line
+	3150 3350 3250 3350
+Wire Wire Line
+	3150 4100 3250 4100
+Wire Wire Line
+	3200 5500 3200 5000
+Wire Wire Line
+	3200 5000 3200 4800
+Connection ~ 3200 5000
+Wire Wire Line
+	3200 4800 3200 4300
+Wire Wire Line
+	3200 4100 3200 4300
+Connection ~ 3200 4300
+Wire Wire Line
+	3150 4800 3250 4800
+Wire Wire Line
+	3150 5500 3250 5500
 $EndSCHEMATC

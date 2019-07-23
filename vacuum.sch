@@ -560,7 +560,6 @@ F 3 "" H 3200 2850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 5450 4500
-NoConn ~ 5450 4600
 NoConn ~ 5450 4900
 NoConn ~ 5450 5800
 Wire Wire Line
@@ -833,7 +832,7 @@ Wire Wire Line
 	5450 5700 5900 5700
 Connection ~ 4950 6100
 Wire Wire Line
-	4950 6100 5750 6100
+	4950 6100 5500 6100
 Wire Wire Line
 	5450 5600 5800 5600
 Wire Wire Line
@@ -1462,4 +1461,22 @@ $EndComp
 Connection ~ 2500 6200
 Wire Wire Line
 	2500 6200 2400 6200
+$Comp
+L Device:C C1
+U 1 1 5D37D26C
+P 5500 5950
+F 0 "C1" H 5615 5997 50  0000 L CNN
+F 1 "10 мкФ" H 5500 5900 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D6.0mm_W2.5mm_P5.00mm" H 5538 5800 50  0001 C CNN
+F 3 "~" H 5500 5950 50  0001 C CNN
+	1    5500 5950
+	1    0    0    -1  
+$EndComp
+Connection ~ 5500 6100
+Wire Wire Line
+	5500 6100 5750 6100
+Wire Wire Line
+	5450 4600 5500 4600
+Wire Wire Line
+	5500 4600 5500 5800
 $EndSCHEMATC
